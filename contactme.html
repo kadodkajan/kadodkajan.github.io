@@ -1,0 +1,138 @@
+
+
+
+
+<!--I declare that my assessment is wholly my own work in accordance
+    with Seneca Academic Policy. No part of this assessment has been
+    copied manually or electronically from any other source 
+    (including web sites) except for the information supplied by the
+    WEB222 instructors and / or made available in this assessment for my
+    use. I also declare that no part of this assignment has been
+    distributed to other students. 
+
+
+    NAME:NAVAKEERTHAN
+    EMAIL:NSARVANANDAM@MYSENECA.CA 
+    SECTION:NBB
+    Student ID:144723186
+    Instructor:Noman Atique -->
+    
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>contact me</title>
+</head>
+<body>
+    <!-- MAIN CONTAINER -->
+    
+    <div id="info">
+        <div id="contact">
+            <div id="contact-2">
+            <h2 >Contact ME</h2>
+            </div>
+            <div id="contact-1">
+           <a href="index.html"> <h2 >Home</h2></a></div>
+
+        </div>
+            <form action="https://httpbin.org/post" method="POST" onsubmit=" Info_check(event)">
+                    
+                <!-- NAME -->
+                    <div id="name">
+                    <label for="Name">
+                        Name<span class="requir"> *</span><br>
+                        <input type="text" name="name" id="name" autofocus size="20" required
+                            placeholder="Enter your Name" />
+                    </label>
+                </div>
+                <div id="email">
+                    <!-- EMAIL -->
+                    <label for="email">
+                        Email<span class="requir">* </span><br>
+                        <input type="text" name="email" id="email" autofocus size="20" pattern="^[^\s@]+@[^\s@]+$" required placeholder="Example@example.com" />
+                    </label>
+                </div>
+                <dive id="address">
+                    <!-- ADDRESS -->
+                    <label for="address">
+                        Address<span class="requir">*</span><br>
+                        <input type="text" name="address" id="address" autofocus size="20" required
+                            placeholder="90 Wingarden Road" />
+                    </label>
+                </dive>
+                    <!-- CITY -->
+
+                    <div id="city">
+                    <label for="city">
+                        City<span class="requir">*</span><br>
+                       
+                        <input type="text" name="city" id="city" size="20" autofocus required placeholder="Paris" list="data"/>
+                        <datalist id="data">
+                            <option value="Toronto"></option>
+                            <option value="Montréal"></option>
+                            <option value="Vancouver"></option>
+                            <option value="Edmonton"></option>
+                            <option value="Winnipeg"></option>
+                            <option value="London"></option>
+                            <option value="Windsor"></option>
+                            <option value="Saskatoon"></option>
+                            <option value="Barrie"></option>
+                            <option value="Calgary"></option>
+
+
+                        </datalist>
+                    </label>
+                </div>
+                    <!-- POSTAL -->
+                    <div id="postal">
+                    <label for="postal">
+                        Postal Code<span class="requir">*</span><br>
+                        <input type="text" name="postal" id="postal" autofocus size="20"
+                        pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required
+                            placeholder="M1b2k3" />
+                    </label>
+                </div>
+      
+         
+
+            <!-- QUERY -->
+            <div>
+            <input type="radio" id="op1" name="option" >
+            <label for="op1">Comment</label>
+            <div id="op1reveal" >                
+                <textarea name="comment" placeholder="All type of comments are welcome" rows="5" cols="50"></textarea>       
+            </div>
+           </div>
+         <!-- QUESTION -->
+            <div>
+            <input type="radio" id="op2" name="option" >
+            <label for="op2">Question</label>
+            <div id="op2reveal" >                
+                <textarea name="question" placeholder="Ask your question" rows="5" cols="50" ></textarea>       
+            </div>
+           </div>
+        <!-- WAGE -->
+
+        
+            <div>
+            <input type="radio" id="op3" name="option" >
+            <label for="op3">Hiring</label>
+            <div id="op3reveal" >                
+                <input  type="number" name="wage" autofocus min="0" step="0.50"
+                placeholder="Hourly Rate" />      
+            </div>           
+            </div>
+
+                <input type="submit" value="Submit " />
+            </form>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
