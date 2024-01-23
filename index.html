@@ -1,14 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Clones</h1>
-    <ul>
-        <li><a href="clones/netflix/netflix.html">Netflix</a></li>
-    </ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navakeerthan</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      id="navbar-example2"
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navakeerthan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#home"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#about"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#projects"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#contactme"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Your page content here -->
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-offset="56"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+      tabindex="0"
+    >
+      <h4 id="scrollspyHeading1"></h4>
+      <div id="home" class="container my-5">
+        <!-- Adjust the margin-top value based on your navbar height -->
+        <div
+          class="d-flex align-items-center justify-content-center text-center vh-100"
+        >
+          <div>
+            <h1>Hello, I'm Navakeerthan</h1>
+            <br />
+            <p>
+              Currenly enrolled in Computer Programming and Analysis at Seneca
+              College.
+            </p>
+            <p>
+              Looking for a Co-op position in the field of Software Development.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h4 id="scrollspyHeading2"></h4>
+      <!-- Adjust the margin-top value based on your navbar height -->
+      <div
+        id="about"
+        class="d-flex align-items-center justify-content-center text-justify vh-100"
+      >
+        <div class="container">
+          <div class="col-xxxl-6">
+            <h1 class="text-center">About Me</h1>
+            <br />
+            <br />
+            <p>
+              I'm an enthusiastic student actively seeking a co-op to apply and
+              expand my skills. Proficient in C++, Python, Java, and JavaScript,
+              with hands-on experience in SQL, MongoDB, React, Git, and GitHub.
+            </p>
+
+            <p>
+              As a Production Supervisor at Summerhill Market in Toronto, I led
+              a team, developing organizational, leadership, and problem-solving
+              skills. I've overseen daily operations, addressed challenges, and
+              fostered a culture of innovation.
+            </p>
+            <p>
+              Eager to bring this experience and tech passion to a co-op role, I
+              am committed to learning and making meaningful contributions to a
+              dynamic team. Let's collaborate and create something amazing!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h4 id="scrollspyHeading3"></h4>
+
+      <div
+        id="projects"
+        class="d-flex align-items-center justify-content-center text-justify"
+      >
+        <div class="container" style="margin-top: 64px">
+          <h1 class="text-center">Projects</h1>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Store Api</h5>
+                  <p class="card-text">
+                    Backend API built with Node.js,express.js and MongoDB. It
+                    includes controllers, models, routes, and utility files for
+                    managing users, stores, orders, and more.
+                  </p>
+
+                  <!-- MongoDB -->
+                  <img
+                    src="https://img.shields.io/badge/database-MongoDB-4DB33D?style=flat-square&logo=mongodb"
+                    alt="MongoDB"
+                  />
+                  <!-- Node.js -->
+                  <img
+                    src="https://img.shields.io/badge/runtime-Node.js-339933?style=flat-square&logo=node.js"
+                    alt="Node.js"
+                  />
+                  <div class="text-center mt-3">
+                    <a
+                      href="https://github.com/kadodkajan/api_for_shm"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                    <a
+                      href="https://apiforshm-production.up.railway.app/"
+                      class="btn btn-success"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Admin Dashboard</h5>
+                  <p class="card-text">
+                    This is an Admin Dashboard application built with React.js,
+                    Redux, and Bootstrap.Connect to the API to manage users,
+                    stores.Hosted on Vercel.
+                  </p>
+
+                  <!-- React -->
+                  <img
+                    src="https://img.shields.io/badge/library-React-61DAFB?style=flat-square&logo=react"
+                    alt="React"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/language-JavaScript-blue?style=flat-square&logo=javascript"
+                    alt="JavaScript"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/framework-Bootstrap-563D7C?style=flat-square&logo=bootstrap"
+                    alt="Bootstrap"
+                  />
+
+                  <div class="text-center mt-3">
+                    <a
+                      href="https://github.com/kadodkajan/shm-admin"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                    <a
+                      href="https://shm-admin.vercel.app/store"
+                      class="btn btn-success"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Order Processing App</h5>
+                  <p class="card-text">
+                    This is a Dashboard application built for stores to place
+                    their orders from their commissary kitchen. Deployed on
+                    vercel. Click credential Button for Credentials.
+                  </p>
+                  <img
+                    src="https://img.shields.io/badge/library-React-61DAFB?style=flat-square&logo=react"
+                    alt="React"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/language-JavaScript-blue?style=flat-square&logo=javascript"
+                    alt="JavaScript"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/framework-Bootstrap-563D7C?style=flat-square&logo=bootstrap"
+                    alt="Bootstrap"
+                  />
+                  <div class="text-center mt-3">
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/kadodkajan/shm_stores"
+                        class="btn btn-primary"
+                        target="_blank"
+                        >GitHub</a
+                      >
+                      <a
+                        href="https://shm-stores.vercel.app/"
+                        class="btn btn-success"
+                        target="_blank"
+                        >Preview</a
+                      >
+                      <button
+                        type="button"
+                        class="btn btn-info"
+                        onclick="showCredentials()"
+                      >
+                        Credentials
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div
+              id="credentialsModal"
+              class="modal"
+              tabindex="-1"
+              role="dialog"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Store Name</th>
+                          <th scope="col">Username</th>
+                          <th scope="col">Password</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Commissary</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>Store 1</td>
+                          <td>1</td>
+                          <td>1</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Library Manager</h5>
+                  <p class="card-text">
+                    Library Manager is a Java console application that
+                    efficiently manage books and users in a library.
+                  </p>
+                  <img
+                    src="https://img.shields.io/badge/language-Java-007396?style=flat-square&logo=java"
+                    alt="Java"
+                  />
+
+                  <div class="text-center mt-3">
+                    <a
+                      href="https://github.com/kadodkajan/librarymanager"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 id="scrollspyHeading4"></h4>
+      <div id="contactme" class="container my-5"></div>
+      <div
+        id="contact"
+        class="d-flex align-items-center justify-content-center text-center vh-100"
+      >
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <h1 class="mb-4">Contact Me</h1>
+              <p>
+                I'm always open to discussing work opportunities, collaborative
+                projects, or just to chat about tech. Feel free to reach out to
+                me through any of the following methods:
+              </p>
+
+              <p class="mb-2"><strong>Email:</strong> sarvanava@gmail.com</p>
+
+              <p class="mb-2">
+                <a
+                  href="https://www.linkedin.com/in/nava-3a4b06160/"
+                  target="_blank"
+                  >Linkedin</a
+                >
+              </p>
+
+              <p class="mb-2">
+                <a href="https://github.com/kadodkajan" target="_blank"
+                  >Github</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
 </html>
